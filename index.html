@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lecture 28</title>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="assets/js/shopping-table.js"></script>
+</head>
+<body>
+<div id="log">
+	<form action="" method="post" id="info">
+		<div>
+			<label for="username">User name</label>
+		</div>
+			<input type="text" id="username" />
+		
+		<div>
+			<label for="password">Password</label>
+		</div>
+			<input type="text" id="password" />
+		<p id="error">User name or password does not match</p>
+		<div>
+			<button type="submit" id="log-btn">Log in</button>
+		</div>
+	</form>
+</div>
+
+
+<div id="table">
+	<h1>Groceries</h1>
+	<button id="add-btn">+</button>
+		<table id="groceries">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Name</th>
+					<th>Quantity</th>
+					<th>Price</th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+
+		</table>
+</div>
+
+
+<div id="new">
+	<form action="" method="post" id="row">
+		<div>
+			<label for="number">#</label>
+		</div>
+		<input type="text" name="number" id="number" />
+		
+		<div>
+			<label for="name">Name</label>
+		</div>
+		<input type="text" name="name" id="name" />
+		<p class="error"></p>
+		
+		<div>
+			<label for="quantity">Quantity</label>
+		</div>
+		<input type="text" name="quantity" id="quantity" />
+		<p class="error"></p>
+			
+		<div>
+			<label for="price">Price</label>
+		</div>
+		<input type="text" name="price" id="price" />
+		<p class="error"></p>
+	
+		<div>
+			<button id="add-table-btn">Add</button>
+		</div>
+	</form>
+</div>
+</body>
+</html>
